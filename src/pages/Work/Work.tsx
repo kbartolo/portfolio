@@ -1,5 +1,7 @@
-import realState from "../../assets/images/projects/realestate.jpg";
-import workImg from "../../assets/images/projects/workImg.jpeg";
+import portfolio from "../../assets/images/projects/work-portfolio.jpg";
+import randomuser from "../../assets/images/projects/work-randomuser.jpg";
+import swagger from "../../assets/images/projects/work-swagger.jpg";
+import todoapp from "../../assets/images/projects/work-todo-app.jpg";
 import { GridItem, TextUnderline } from "../../components/atoms";
 
 const Work = () => {
@@ -13,14 +15,31 @@ const Work = () => {
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
           {/* Grid Item */}
-          <GridItem title="React Application 1" image={workImg} />
-          <GridItem title="React Application 2" image={realState} />
-          <GridItem title="React Application 3" image={workImg} />
-          <GridItem title="GRAPHQL CRUD" image={realState} />
-          <GridItem title="Tic Tac Toe" image={workImg} />
           <GridItem
-            title="React Native - Mobile Application"
-            image={realState}
+            linkDemo={
+              "https://node-express-restful-api.herokuapp.com/v1/users/doc/"
+            }
+            linkCode={"https://github.com/kbartolo/user_yt_managment_node_app"}
+            title="User Restful Api - Node, Express and Swagger"
+            image={swagger}
+          />
+          <GridItem
+            linkDemo={"https://stackblitz.com/edit/react-ts-mrgunv"}
+            linkCode={"https://github.com/kbartolo/randomuser-api-app-react"}
+            title="RandomUser Api - ReactJS, Typescript"
+            image={randomuser}
+          />
+          <GridItem
+            linkDemo={"https://kbartolo.github.io/todo-app-react-bootstrap/"}
+            linkCode={"https://github.com/kbartolo/todo-app-react-bootstrap"}
+            title="TODO List - ReactJS, Typescript"
+            image={todoapp}
+          />
+          <GridItem
+            linkDemo={"https://kbartolo.github.io/portfolio/"}
+            linkCode={"https://github.com/kbartolo/portfolio"}
+            title="Portfolio Website - ReactJS, TS, Atomic Design Structure"
+            image={portfolio}
           />
         </div>
       </div>

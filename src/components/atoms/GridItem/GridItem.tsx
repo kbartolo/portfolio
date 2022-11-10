@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { GridItemProps } from "./types";
 
-const GridItem: FC<GridItemProps> = ({ title, image }) => {
+const GridItem: FC<GridItemProps> = ({ title, image, linkDemo, linkCode }) => {
   return (
     <div
       style={{ backgroundImage: `url(${image})` }}
@@ -13,12 +13,12 @@ const GridItem: FC<GridItemProps> = ({ title, image }) => {
           {title}
         </span>
         <div className="pt-8 text-center">
-          <a href="/">
+          <a href={linkDemo} target="_blank" rel="noreferrer">
             <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
               Demo
             </button>
           </a>
-          <a href="/">
+          <a href={linkCode} target="_blank" rel="noreferrer">
             <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
               Code
             </button>
