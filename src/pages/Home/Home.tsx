@@ -16,8 +16,8 @@ const Home = () => {
         </h2>
         <div className="text-[#8892b0] py-4 max-w-[700px]">
           <p className="pb-4">
-            I'm a Full Stack Engineer specializing in building applications with
-            exceptional digital experience.
+            I'm a Full Stack Mobile Engineer specializing in building
+            applications with exceptional digital experience.
           </p>
           <p>
             I'm focused in developing full-stack web applications using NextJS,

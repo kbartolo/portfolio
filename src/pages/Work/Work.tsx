@@ -2,6 +2,7 @@ import portfolio from "../../assets/images/projects/work-portfolio.jpg";
 import randomuser from "../../assets/images/projects/work-randomuser.jpg";
 import swagger from "../../assets/images/projects/work-swagger.jpg";
 import todoapp from "../../assets/images/projects/work-todo-app.jpg";
+import delivery from "../../assets/images/projects/work-delivery-mobile.jpg";
 import { GridItem, TextUnderline } from "../../components/atoms";
 
 const Work = () => {
@@ -15,6 +16,18 @@ const Work = () => {
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
           {/* Grid Item */}
+          <GridItem
+            linkDemo={""}
+            linkCode={"https://github.com/kbartolo/delivery-mobile-app"}
+            title="Delivery Mobile App - React Native, Typescript, Tailwind"
+            image={delivery}
+          />
+          <GridItem
+            linkDemo={"https://kbartolo.github.io/portfolio/"}
+            linkCode={"https://github.com/kbartolo/portfolio"}
+            title="Portfolio Website - ReactJS, TS, Atomic Design Structure"
+            image={portfolio}
+          />
           <GridItem
             linkDemo={
               "https://node-express-restful-api.herokuapp.com/v1/users/doc/"
@@ -34,12 +47,6 @@ const Work = () => {
             linkCode={"https://github.com/kbartolo/todo-app-react-bootstrap"}
             title="TODO List - ReactJS, Typescript"
             image={todoapp}
-          />
-          <GridItem
-            linkDemo={"https://kbartolo.github.io/portfolio/"}
-            linkCode={"https://github.com/kbartolo/portfolio"}
-            title="Portfolio Website - ReactJS, TS, Atomic Design Structure"
-            image={portfolio}
           />
         </div>
       </div>
